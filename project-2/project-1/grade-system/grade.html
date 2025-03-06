@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculation</title>
+    <script src="grade.js"></script>
+    <style>
+        #hindi,
+        #gujarati,
+        #english,
+        #math,
+        #science,
+        #history,
+        #geography,
+        #btn {
+            margin: 10px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Grade Calculator</h1>
+    <form>
+        <input type="number" id="hindi" placeholder="Hindi"><br>
+        <input type="number" id="gujarati" placeholder="gujarati"><br>
+        <input type="number" id="english" placeholder="english"><br>
+        <input type="number" id="math" placeholder="math"><br>
+        <input type="number" id="science" placeholder="science"><br>
+        <input type="number" id="history" placeholder="history"><br>
+        <input type="number" id="geography" placeholder="geography"><br>
+        <button type="button" onclick="per()" id="btn">Calculate Result</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+   
+</body>
+
+</html>

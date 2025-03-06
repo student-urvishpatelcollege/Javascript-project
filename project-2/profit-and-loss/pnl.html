@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss Calculation</title>
+    <script src="pnl.js" defer></script>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .conatiner {
+            height: 300px;
+            width: 30%;
+            margin: 125px auto;
+            border: none;
+            box-shadow: 0px 0px 6px black;
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #btn {
+            background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
+        }
+
+        #btn {
+            margin: 10px;
+            padding: 10px 30px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            /* box-shadow: 0 0 20px #eee; */
+            border-radius: 5px;
+            border: none;
+            background-color: #fff;
+        }
+
+        #btn:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #costPrice,
+        #sellPrice {
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1>Profit & Loss Calculation</h1>
+        <label for="costPrice">Cost price -</label>
+        <input type="text" id="costPrice" placeholder="Enter Cost Price"><br><br>
+        <label for="sellPrice">Sell price -</label>
+        <input type="text" id="sellPrice" placeholder="Enter Sell Price"><br><br>
+        <button onclick="cal()" id="btn">Calculate</button><br>
+        <p id="answer"></p>
+    </div>
+</body>
+
+</html>

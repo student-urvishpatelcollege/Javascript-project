@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="calculator.js" defer></script>
+    <style>
+        * {
+            background-color: lightyellow;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            background-color: white;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        #num,
+        #num2,
+        #numberOne,
+        #numberTwo,
+        .btn,
+        #result,
+        #answer {
+            background-color: white;
+            height: 25px;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .num,.num2{
+            background-color: white;
+
+        }
+
+        /* .box{
+            height: 25px;
+            border: 2px solid black;
+            width: 30%;
+            background-color: white;
+            margin: 0px auto;
+            margin-top: 10px;
+        } */
+        .btn {
+            height: 25px;
+            width: 35px;
+            border: 1px solid;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 0px 4px gray;
+        }
+
+        .container {
+            height: auto;
+            width: 25%;
+            margin: 125px auto;
+            text-align: center;
+            padding: 20px;
+            border: 0px solid black;
+            box-shadow: 0px 0px 6px grey;
+            border-radius: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <label for="num" class="num">Number 1:</label>
+        <input type="number" id="num"><br>
+        <label for="num2" class="num2">Number 2:</label>
+        <input type="number" id="num2"><br>
+        <button onclick="cal('add')" class="btn">+</button>
+        <button onclick="cal('sub')" class="btn">-</button>
+        <button onclick="cal('mult')" class="btn">*</button>
+        <button onclick="cal('div')" class="btn">/</button>
+        <div id="result">Answer :</div>
+    </div>
+</body>
+
+</html>
