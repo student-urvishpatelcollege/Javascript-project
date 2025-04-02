@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bulb.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        #btn1,
+        #btn2 {
+            padding: 10px 25px;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            border: none;
+            font-size: 24px;
+        }
+
+        #image{
+            height: auto;
+            width: 25%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://i.postimg.cc/KjK1wL3c/bulb-off.png" alt="" srcset="" id="image"><br><br>
+        <button id="btn1" onclick="on()">ON</button>
+        <button id="btn2" onclick="off()">OFF</button>
+    </div>
+</body>
+
+</html>
