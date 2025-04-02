@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="add_n_display.js" defer></script>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- => Add Items to Array
+Write a JavaScript program to add items to a blank array and display them.
+Sample Screen :
+add elements in an blank array
+input box: __________
+add button
+display button -->
+
+<div class="box">
+    <input type="text" placeholder="write something here..." id="text"><br><br>
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button><br>
+    <p id="p"></p>
+</div>
+
+</body>
+</html>
