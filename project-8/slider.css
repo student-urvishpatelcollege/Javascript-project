@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: none;
+    box-shadow: 0px 0px 13px black;
+    height: 500px;
+    width: 78%;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .slide {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#s1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/256/1200/500);
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+}
+
+#s2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/257/1200/500);
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+}
+
+#s3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/268/1200/500);
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+}
+
+#s4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/273/1200/500);
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+}
+
+#s5 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/299/1200/500);
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+}
+
+.slide h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.slide p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.slide .num {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    width: 40px;
+}
+
+.slide-txt-1 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide-txt-2 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide-txt-3 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide-txt-4 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide-txt-5 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-box {
+    text-align: center;
+    transform: translateY(50px);
+}
+
+.prev,
+.next {
+    font-size: 30px;
+    border: none;
+    padding: 15px 20px;
+    background: none;
+    color: black;
+}
+
+.prev {
+    transform: translateY(50px);
+    margin-left: 20px;
+}
+.next{
+    margin-right: 20px;
+}
+
+.prev:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+
+.next:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}
