@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="add-to-cart.css">
+    <script src="add-to-cart.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main">
+            <h1>Your Shopping Cart</h1>
+            <div class="products">
+                <div class="product-card">
+                    <!-- <img src="img/in-galaxy-s25-s938-sm-s938bzbcins-thumb-544702652.avif" alt="Product 1"> -->
+                    <img src="img/galaxy-s25-ultra.webp" alt="product 1">
+                    <h3>GALAXY S25 Ultra</h3>
+                    <p>₹135999</p>
+                    <button class="atc">
+                        <i class="fas fa-cart-plus"></i>Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/in-galaxy-z-fold5-f946-467155-sm-f946bzbgins-thumb-537252771.avif" alt="Product 2">
+                    <h3>GALAXY Z Fold5</h3>
+                    <p>₹154999</p>
+                    <button class="atc">
+                        <i class="fas fa-cart-plus"></i>Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/in-galaxy-a26-5g-sm-a266-sm-a266bzikins-thumb-545323827.avif" alt="Product 3">
+                    <h3>GALAXY A26 5G</h3>
+                    <p>₹24000</p>
+                    <button class="atc"><i class="fas fa-cart-plus"></i>Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/iphone-card-40-iphone16hero-202409.jpeg" alt="Product 4">
+                    <h3>iPhone 16 Plus</h3>
+                    <p>₹79900</p>
+                    <button class="atc"><i class="fas fa-cart-plus"></i>Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/iphone-card-40-iphone16prohero-202409.jpeg" alt="Product 5">
+                    <h3>iPhone 16 Pro</h3>
+                    <p>₹119900</p>
+                    <button class="atc"><i class="fas fa-cart-plus"></i>Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/iphone-card-40-iphone15hero-202309.jpeg" alt="Product 6">
+                    <h3>iPhone 15 Plus</h3>
+                    <p>₹69900</p>
+                    <button class="atc"><i class="fas fa-cart-plus"></i>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="title">
+                <h2>Cart</h2>
+                <span>
+                    <div><span id="total"></span></div><i class="fa-solid fa-bag-shopping fa-xl"></i>
+                </span>
+            </div>
+            <ul class="cart-items">
+            </ul>
+            <div class="cart-total">
+                <span>Total</span>
+                <span></span>
+            </div>
+            <div class="cart-footer">
+                <button id="buy-button">Buy Now</button>
+            </div>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
