@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <h1>Weather Dashboard</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter city name..." />
+            <button id="searchBtn">Search</button>
+            <div class="unit-toggle" id="unitToggle">°C / °F</div>
+        </div>
+
+        <div class="weather-card">
+            <h2 id="cityName">City Name</h2>
+            <img id="weatherIcon" class="weather-icon" src="" alt="Weather Icon" />
+            <h1 id="temperature">--°C</h1>
+            <p id="condition">Condition</p>
+
+            <div class="info-grid">
+                <div>
+                    <div id="feelsLike">--°</div><small>Feels Like</small>
+                </div>
+                <div>
+                    <div id="humidity">--%</div><small>Humidity</small>
+                </div>
+                <div>
+                    <div id="wind">-- km/h</div><small>Wind</small>
+                </div>
+                <div>
+                    <div id="minMax">-- / --</div><small>Min / Max</small>
+                </div>
+            </div>
+        </div>
+
+        <h4>Next 12 Hours</h4>
+        <div class="hourly-scroll" id="hourlyContainer"></div>
+
+        <h4>7-Day Forecast</h4>
+        <div class="forecast-container" id="forecastContainer"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
